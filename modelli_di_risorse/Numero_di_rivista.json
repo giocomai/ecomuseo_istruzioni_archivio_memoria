@@ -1,0 +1,95 @@
+{
+    "o:label": "Numero di rivista",
+    "o:resource_template_property": [
+        {
+            "o:alternate_label": "Titolo",
+            "o:alternate_comment": "Indicare nel formato Titolo (anno\/numero), ad esempio \"Vezzano 7 (2015\/3)\"",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "literal",
+            "data_type_label": "Text",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "title",
+            "label": "Title"
+        },
+        {
+            "o:alternate_label": "Descrizione o sottotitolo",
+            "o:alternate_comment": "Titolo completo, incluso sottotitolo.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "literal",
+            "data_type_label": "Text",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "description",
+            "label": "Description"
+        },
+        {
+            "o:alternate_label": "Data di pubblicazione",
+            "o:alternate_comment": "Per riviste, spesso anno o anno e mese",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "numeric:timestamp",
+            "data_type_label": "Timestamp",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "issued",
+            "label": "Date Issued"
+        },
+        {
+            "o:alternate_label": "Volume",
+            "o:alternate_comment": "Spesso corrisponde al numero di anni dalla prima pubblicazione",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/ontology\/bibo\/",
+            "vocabulary_label": "Bibliographic Ontology",
+            "local_name": "volume",
+            "label": "volume"
+        },
+        {
+            "o:alternate_label": "Numero",
+            "o:alternate_comment": "Numero della rivista. Spesso corrisponde al numero di pubblicazioni avvenute dall'inizio dell'anno.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/ontology\/bibo\/",
+            "vocabulary_label": "Bibliographic Ontology",
+            "local_name": "issue",
+            "label": "issue"
+        },
+        {
+            "o:alternate_label": "Indice",
+            "o:alternate_comment": "Indice in semplice formato testuale",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "tableOfContents",
+            "label": "Table Of Contents"
+        },
+        {
+            "o:alternate_label": "Include",
+            "o:alternate_comment": "Se singoli articoli sono separatamente inclusi nell'archivio, usare questo campo per collegarli.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "resource:item",
+            "data_type_label": "Item",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "hasPart",
+            "label": "Has Part"
+        }
+    ],
+    "o:resource_class": {
+        "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/dcmitype\/",
+        "vocabulary_label": "Dublin Core Type",
+        "local_name": "Text",
+        "label": "Text"
+    }
+}

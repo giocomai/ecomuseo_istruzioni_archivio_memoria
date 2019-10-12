@@ -1,0 +1,191 @@
+{
+    "o:label": "Documento storico",
+    "o:resource_template_property": [
+        {
+            "o:alternate_label": "Titolo",
+            "o:alternate_comment": "Titolo del documento o breve descrizione che pu\u00f2 fungere come tale. Se il titolo \u00e8 in una lingua diversa dall'italiano, inserire sia il titolo in originale che il titolo tradotto specificando la lingua con l'apposita funzione.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "title",
+            "label": "Title"
+        },
+        {
+            "o:alternate_label": "Descrizione",
+            "o:alternate_comment": "Breve descrizione del documento",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "description",
+            "label": "Description"
+        },
+        {
+            "o:alternate_label": "Tipo",
+            "o:alternate_comment": "Selezionare dal menu la tipologia di documento che meglio si adatta a questo contenuto.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "customvocab:4",
+            "data_type_label": "Tipologia documento",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "type",
+            "label": "Type"
+        },
+        {
+            "o:alternate_label": "Riassunto",
+            "o:alternate_comment": "Se rilevante, utile e possibile, includere un breve riassunto del documento. Altrimenti, lasciare vuote.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "abstract",
+            "label": "Abstract"
+        },
+        {
+            "o:alternate_label": "Copertura territoriale",
+            "o:alternate_comment": "Se riferito a un paese o locali\u00e0, indicare nel formato: localit\u00e0, comune, capoluogo di provincia. Altrimenti, includere solo comune e provincia o area. Se riferito ad area storica o comune non pi\u00f9 esistente, ripetere questo campo includendo sia il nome originale, sia il nome contemporaneo dell'area di riferimento (ad esempio, nome contemporaneo del comune in cui si trova oggi quel paese o area). Dettagliare in mappa se rilevante.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "spatial",
+            "label": "Spatial Coverage"
+        },
+        {
+            "o:alternate_label": "Data di creazione",
+            "o:alternate_comment": "Data in cui \u00e8 stata scritta o pubblicata la risorsa (\u00e8 possibile includere anche solo l'anno). Se la data \u00e8 approssimativa, aggiungere dettagli nella descrizione.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "numeric:timestamp",
+            "data_type_label": "Timestamp",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "created",
+            "label": "Date Created"
+        },
+        {
+            "o:alternate_label": "Creatore",
+            "o:alternate_comment": "Entit\u00e0 o persona principalmente responsabile della creazione della risorsa.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "creator",
+            "label": "Creator"
+        },
+        {
+            "o:alternate_label": "Soggetto produttore",
+            "o:alternate_comment": "Soggetto (ente, famiglia o persona) che ha prodotto o acquisito per finalit\u00e0  amministrative, familiari o personali il complesso archivistico oggetto di descrizione.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/culturalis.org\/oad#",
+            "vocabulary_label": "OAD - Ontology for Archival Description",
+            "local_name": "hasNameOfCreator",
+            "label": "Nome del soggetto produttore"
+        },
+        {
+            "o:alternate_label": "Copertura temporale",
+            "o:alternate_comment": "Periodo coperto da questo documento. \u00c8 possibile inserire anche solo anno, o anno e mese. Se la data \u00e8 approssimativa, includere dettagli di contesto nella descrizione.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "numeric:interval",
+            "data_type_label": "Interval",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "temporal",
+            "label": "Temporal Coverage"
+        },
+        {
+            "o:alternate_label": "Indice dei contenuti",
+            "o:alternate_comment": "Completare questo campo solo se rilevante",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "tableOfContents",
+            "label": "Table Of Contents"
+        },
+        {
+            "o:alternate_label": "Identificativo",
+            "o:alternate_comment": "Un riferimento univoco alla risorsa nell'archivio in cui \u00e8 custodita.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "identifier",
+            "label": "Identifier"
+        },
+        {
+            "o:alternate_label": "Lingua",
+            "o:alternate_comment": "Lingua in cui \u00e8 scritta la risorsa. Se pi\u00f9 di una, aggiungere valori per ripetere il campo",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "language",
+            "label": "Language"
+        },
+        {
+            "o:alternate_label": "Collocazione",
+            "o:alternate_comment": "Corrisponde a \"soggetto conservatore\".",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "provenance",
+            "label": "Provenance"
+        },
+        {
+            "o:alternate_label": "\u00c8 parte di",
+            "o:alternate_comment": "Includere collegamento all'ente, mostra o archivio in cui \u00e8 custodito o in cui \u00e8 stata esposta la risorsa. ",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "resource:item",
+            "data_type_label": "Item",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "isPartOf",
+            "label": "Is Part Of"
+        },
+        {
+            "o:alternate_label": "Supporto e consistenza",
+            "o:alternate_comment": "Descrivere la consistenza materiale o logica, e il supporto in cui materialmente si presenta.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/culturalis.org\/oad#",
+            "vocabulary_label": "OAD - Ontology for Archival Description",
+            "local_name": "extentAndMedium",
+            "label": "Consistenza e supporto dell'unit\u00e0 di descrizione"
+        }
+    ],
+    "o:resource_class": {
+        "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/dcmitype\/",
+        "vocabulary_label": "Dublin Core Type",
+        "local_name": "Text",
+        "label": "Text"
+    }
+}

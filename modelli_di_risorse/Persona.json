@@ -1,0 +1,83 @@
+{
+    "o:label": "Persona",
+    "o:resource_template_property": [
+        {
+            "o:alternate_label": "Nome",
+            "o:alternate_comment": "Nome e cognome, o nome con il quale \u00e8 genericamente noto",
+            "o:is_required": true,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "title",
+            "label": "Title"
+        },
+        {
+            "o:alternate_label": "Descrizione",
+            "o:alternate_comment": "Aggiungere dettagli se utile",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "description",
+            "label": "Description"
+        },
+        {
+            "o:alternate_label": "Cognome",
+            "o:alternate_comment": "Includere solo il cognome",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/xmlns.com\/foaf\/0.1\/",
+            "vocabulary_label": "Friend of a Friend",
+            "local_name": "lastName",
+            "label": "lastName"
+        },
+        {
+            "o:alternate_label": "Nome",
+            "o:alternate_comment": "Includere solo il nome (nome proprio o di battesimo)",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/xmlns.com\/foaf\/0.1\/",
+            "vocabulary_label": "Friend of a Friend",
+            "local_name": "firstName",
+            "label": "firstName"
+        },
+        {
+            "o:alternate_label": "Paese di provenienza",
+            "o:alternate_comment": "Includere solo se rilevante",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/xmlns.com\/foaf\/0.1\/",
+            "vocabulary_label": "Friend of a Friend",
+            "local_name": "based_near",
+            "label": "based near"
+        },
+        {
+            "o:alternate_label": "ID genealogia",
+            "o:alternate_comment": "Includere identificativo (come testo) e link (come URI) all'archivio genealogico dell'Ecomuseo",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "identifier",
+            "label": "Identifier"
+        }
+    ],
+    "o:resource_class": {
+        "vocabulary_namespace_uri": "http:\/\/xmlns.com\/foaf\/0.1\/",
+        "vocabulary_label": "Friend of a Friend",
+        "local_name": "Person",
+        "label": "Person"
+    }
+}

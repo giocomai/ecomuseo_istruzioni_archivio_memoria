@@ -1,0 +1,47 @@
+{
+    "o:label": "Ente, archivio o collezione personale",
+    "o:resource_template_property": [
+        {
+            "o:alternate_label": "Nome dell'ente o della collezione",
+            "o:alternate_comment": "Ad esempio, \"Archivio comunale di Vallelaghi\" o \"Collezione personale di Maria Rossi\"",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "title",
+            "label": "Title"
+        },
+        {
+            "o:alternate_label": "Descrizione",
+            "o:alternate_comment": "Informazioni aggiuntive che caratterizzano il tipo di archivio o collezione.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "description",
+            "label": "Description"
+        },
+        {
+            "o:alternate_label": "Collocazione",
+            "o:alternate_comment": "Sede dell'ente o luogo\/paese dove \u00e8 custodito l'archivio, tipicamente nel formato \"Localit\u00e0, Comune, Capoluogo di provincia\"",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "spatial",
+            "label": "Spatial Coverage"
+        }
+    ],
+    "o:resource_class": {
+        "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/dcmitype\/",
+        "vocabulary_label": "Dublin Core Type",
+        "local_name": "Collection",
+        "label": "Collection"
+    }
+}

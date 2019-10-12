@@ -1,0 +1,59 @@
+{
+    "o:label": "Evento",
+    "o:resource_template_property": [
+        {
+            "o:alternate_label": "Nome dell'evento",
+            "o:alternate_comment": "Nome dell'evento, della manifestazione o della mostra",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "title",
+            "label": "Title"
+        },
+        {
+            "o:alternate_label": "Descrizione",
+            "o:alternate_comment": "Breve descrizione dell'evento e del contesto in cui ha avuto luogo",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "description",
+            "label": "Description"
+        },
+        {
+            "o:alternate_label": "Data dell'evento",
+            "o:alternate_comment": "Date in cui si \u00e8 tenuto l'evento. Se l'evento \u00e8 durato un solo giorno, ripetere la stessa data.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "numeric:interval",
+            "data_type_label": "Interval",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "date",
+            "label": "Date"
+        },
+        {
+            "o:alternate_label": "Luogo",
+            "o:alternate_comment": "Luogo dove si \u00e8 tenuto l'evento, tipicamente nel formato \"Localit\u00e0, Comune, Capoluogo di provincia\"",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "spatial",
+            "label": "Spatial Coverage"
+        }
+    ],
+    "o:resource_class": {
+        "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/dcmitype\/",
+        "vocabulary_label": "Dublin Core Type",
+        "local_name": "Event",
+        "label": "Event"
+    }
+}

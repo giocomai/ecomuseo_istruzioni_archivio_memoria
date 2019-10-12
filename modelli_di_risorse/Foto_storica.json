@@ -1,0 +1,131 @@
+{
+    "o:label": "Foto storica",
+    "o:resource_template_property": [
+        {
+            "o:alternate_label": "Titolo",
+            "o:alternate_comment": "Breve titolo che caratterizza l'immagine e\/o ne facilita il ritrovamento",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "literal",
+            "data_type_label": "Text",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "title",
+            "label": "Title"
+        },
+        {
+            "o:alternate_label": "Descrizione",
+            "o:alternate_comment": "Breve descrizione del contenuto dell'immagine, evidenziando aspetti particolarmente rilevanti. Se collocazione geografica o temporale indicati non sono precisi o certi, si possono qui fornire informazioni aggiuntive, anche se ipotetiche.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "description",
+            "label": "Description"
+        },
+        {
+            "o:alternate_label": "Soggetto",
+            "o:alternate_comment": "Includere qui altre risorse presenti nel database visibili in questa risorsa",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "resource:item",
+            "data_type_label": "Item",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "subject",
+            "label": "Subject"
+        },
+        {
+            "o:alternate_label": "Tipologia",
+            "o:alternate_comment": "Tipo di immagine (ad esempio, foto privata, cartolina, stampa, ecc.). Eventualmente valutare con l'amministratore dell'archivio l'opportunit\u00e0 di includere nuove categorie. ",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "customvocab:1",
+            "data_type_label": "Tipologia immagine storica",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "type",
+            "label": "Type"
+        },
+        {
+            "o:alternate_label": "Autore",
+            "o:alternate_comment": "Autore della fotografia",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "creator",
+            "label": "Creator"
+        },
+        {
+            "o:alternate_label": "Data",
+            "o:alternate_comment": "Quando \u00e8 stata scattata la fotografia? Se la data \u00e8 incerta indicare separatamente le due date entro cui \u00e8 presumibilmente stata realizzata l'immagine. \u00c8 possibile indicare anche solo anno, o solo anno mese.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "numeric:timestamp",
+            "data_type_label": "Timestamp",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "created",
+            "label": "Date Created"
+        },
+        {
+            "o:alternate_label": "Luogo",
+            "o:alternate_comment": "Luogo visibile nell'immagine, nel formato: localit\u00e0, comune, capoluogo di provincia. Specificare in mappa collocazione esatta, o indicare centro del paese per generico riferimento alla localit\u00e0.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "spatial",
+            "label": "Spatial Coverage"
+        },
+        {
+            "o:alternate_label": "Collocazione",
+            "o:alternate_comment": "Dove o presso chi \u00e8 custodita l'immagine?",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "provenance",
+            "label": "Provenance"
+        },
+        {
+            "o:alternate_label": "\u00c8 parte di",
+            "o:alternate_comment": "Collezione o archivio digitale di persona o organizzazione che non possiede fisicamente la foto in originale, ma ne detiene copia",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "resource:item",
+            "data_type_label": "Item",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "isPartOf",
+            "label": "Is Part Of"
+        },
+        {
+            "o:alternate_label": "Licenza",
+            "o:alternate_comment": "Specificare solo se \u00e8 nota licenza relativa alla foto originale, altrimenti lasciare vuota. La licenza CC-BY tipicamente si applica direttamente all'immagine allegata, non al contenuto \"foto storica\".",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "license",
+            "label": "License"
+        }
+    ],
+    "o:resource_class": {
+        "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/dcmitype\/",
+        "vocabulary_label": "Dublin Core Type",
+        "local_name": "Image",
+        "label": "Image"
+    }
+}

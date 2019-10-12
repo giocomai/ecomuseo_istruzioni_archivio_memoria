@@ -1,0 +1,131 @@
+{
+    "o:label": "Audio",
+    "o:resource_template_property": [
+        {
+            "o:alternate_label": "Titolo",
+            "o:alternate_comment": "Titolo della registrazione",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "title",
+            "label": "Title"
+        },
+        {
+            "o:alternate_label": "Descrizione",
+            "o:alternate_comment": "Breve descrizione, idealmente che offra anche informazioni per comprendere il contesto in cui \u00e8 stata realizzata la registrazione o gli eventi ivi raccontati. ",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "description",
+            "label": "Description"
+        },
+        {
+            "o:alternate_label": "Lingua",
+            "o:alternate_comment": "Lingua utilizzata. Se pi\u00f9 di una, ripetere il campo.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "language",
+            "label": "Language"
+        },
+        {
+            "o:alternate_label": "Autore della registrazione",
+            "o:alternate_comment": "Includere nel formato: \"Cognome, Nome \", eventualmente ripetendo il campo.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "creator",
+            "label": "Creator"
+        },
+        {
+            "o:alternate_label": "Data di creazione",
+            "o:alternate_comment": "Data in cui \u00e8 stata effettuata la registrazione.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "created",
+            "label": "Date Created"
+        },
+        {
+            "o:alternate_label": "Durata",
+            "o:alternate_comment": "Durata della registrazione.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "numeric:duration",
+            "data_type_label": "Duration",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "extent",
+            "label": "Extent"
+        },
+        {
+            "o:alternate_label": "Formato",
+            "o:alternate_comment": "Formato o risoluzione originale dell'audio. Specificare se audio \u00e8 digitalizzazione di precedente registrazione, ad esempio su audiocassetta.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "format",
+            "label": "Format"
+        },
+        {
+            "o:alternate_label": "Soggetto",
+            "o:alternate_comment": "Includere qui altre risorse presenti nel database di cui si parla in questa risorsa",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "resource:item",
+            "data_type_label": "Item",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "subject",
+            "label": "Subject"
+        },
+        {
+            "o:alternate_label": "Tipo",
+            "o:alternate_comment": "Scegliere tipologia audio dalla lista",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "customvocab:7",
+            "data_type_label": "Tipologia audio",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "type",
+            "label": "Type"
+        },
+        {
+            "o:alternate_label": "Collocazione",
+            "o:alternate_comment": "Collocazione o link a cui l'audio \u00e8 disponibile",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "provenance",
+            "label": "Provenance"
+        }
+    ],
+    "o:resource_class": {
+        "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/dcmitype\/",
+        "vocabulary_label": "Dublin Core Type",
+        "local_name": "Sound",
+        "label": "Sound"
+    }
+}

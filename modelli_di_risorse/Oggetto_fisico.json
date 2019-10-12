@@ -1,0 +1,95 @@
+{
+    "o:label": "Oggetto fisico",
+    "o:resource_template_property": [
+        {
+            "o:alternate_label": "Nome dell'oggetto",
+            "o:alternate_comment": "\u00c8 possibile specificare nome dell'oggetto anche in dialetto, cliccando su \"nuovo valore\" e specificando \"it-trentino\" come lingua cliccando sull'icona mondo. \"it\" \u00e8 il codice per l'italiano.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "literal",
+            "data_type_label": "Text",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "title",
+            "label": "Title"
+        },
+        {
+            "o:alternate_label": "Descrizione",
+            "o:alternate_comment": "Breve descrizione dell'oggetto mirata a spiegare la sua funzione, modalit\u00e0 e contesto di utilizzo.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "description",
+            "label": "Description"
+        },
+        {
+            "o:alternate_label": "Data di creazione",
+            "o:alternate_comment": "Quando \u00e8 stato realizzato l'oggetto? Se la data \u00e8 incerta indicare separatamente le due date entro cui \u00e8 presumibilmente stato creato l'oggetto. \u00c8 possibile indicare anche solo anno, o solo anno e mese. Eventuali ulteriori dettagli possono essere inclusi nel campo descrizione.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "numeric:timestamp",
+            "data_type_label": "Timestamp",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "created",
+            "label": "Date Created"
+        },
+        {
+            "o:alternate_label": "Luogo",
+            "o:alternate_comment": "Specificare il luogo dove era utilizzato questo oggetto",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "spatial",
+            "label": "Spatial Coverage"
+        },
+        {
+            "o:alternate_label": "Collocazione",
+            "o:alternate_comment": "Dove o presso chi \u00e8 custodito l'oggetto?",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "provenance",
+            "label": "Provenance"
+        },
+        {
+            "o:alternate_label": "\u00c8 parte di",
+            "o:alternate_comment": "Includere collegamento all\u2019ente, mostra o archivio in cui \u00e8 custodito o in cui \u00e8 stata esposta la risorsa.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "resource:item",
+            "data_type_label": "Item",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "isPartOf",
+            "label": "Is Part Of"
+        },
+        {
+            "o:alternate_label": "Licenza d'uso",
+            "o:alternate_comment": "Scegliere dal menu. La licenza ovviamente si riferisce alla foto dell'oggetto e non all'oggetto stesso. Tipicamente, CC-BY per immagini o contenuti creati da o per Ecomuseo. Se la licenza non \u00e8 inclusa nell'elenco, contattare l'amministratore del sito per valutare l'inserimento di nuove alternative.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "customvocab:2",
+            "data_type_label": "Licenza",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "license",
+            "label": "License"
+        }
+    ],
+    "o:resource_class": {
+        "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/dcmitype\/",
+        "vocabulary_label": "Dublin Core Type",
+        "local_name": "PhysicalObject",
+        "label": "Physical Object"
+    }
+}

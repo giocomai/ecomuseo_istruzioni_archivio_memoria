@@ -1,0 +1,197 @@
+# Tipologie di contenuti {#tipologiacontenuti}
+
+Vi sono diversi tipi di contenuti che sono parte dell'Archivio di Ecomuseo o che verranno inseriti. Per facilitare la ricercabilità di contenuti all'interno dell'archivio è importante completare i campi descrittivi in modo uniforme. Per farlo, è però importante che quei campi effettivamente si applichino al contenuto in questione: un video, un documento storico, e un oggetto fisico difficilmente potranno essere coerentemente descritti utilizzando gli stessi campi.
+
+Le seguenti tabelle presentano le principali tipologie di contenuti attualmente disponibili nell'Archivio di Ecomuseo. 
+
+```{r echo=FALSE, message = FALSE, warning=FALSE}
+pacman::p_load("tidyverse")
+pacman::p_load("jsonlite")
+pacman::p_load("pander")
+
+
+mostra_tabella_modello <- function (x) {
+  jsonlite::read_json(path = fs::path("modelli_di_risorse", paste0(x, ".json")), simplifyVector = TRUE) %>% 
+    purrr::pluck(2) %>% 
+    dplyr::mutate(Etichetta = dplyr::if_else(condition = is.na(`o:alternate_label`),true = label,false = as.character(`o:alternate_label`))) %>% 
+    dplyr::transmute(Etichetta, Spiegazione = `o:alternate_comment`, Standard = paste(vocabulary_label, local_name, sep = ": ")) %>% pander::pander(split.cells = c(15, 35, 15))
+}
+
+
+#fs::dir_ls(path = fs::path("modelli_di_risorse"))
+
+```
+
+
+
+## Oggetto fisico
+
+[[scarica il file di impostazioni per importare questo modello di contenuto direttamente in Omeka S](modelli_di_risorse/Oggetto_fisico.json)]
+
+Un oggetto fisico è uno specifico, concreto oggetto che esiste nel mondo reale. È cosa diversa da una fotografia di quell'oggetto, e non rappresenta tutti gli oggetti simili.  
+
+La descrizione, ad esempio, di un vecchio macinacaffé potrà includere dettagli che si applicano a gran parte dei macinacaffé realizzati nello stesso periodo, ma lo sforzo dovrà essere quello di concentrarsi sullo specifico oggetto fisico di cui si sta parlando, eventualmente facendo riferimento ad altri oggetti simili per evidenziarne le peculiarità. Tutti i campi dovranno essere completati pensando allo specifico oggetto in questione. 
+
+Nel contesto di Ecomuso, questa tipologia è utilizzata principalmente per inserire vecchi oggetti utilizzati dalla comunità, le "cose di una volta". È plausibile immaginare che nell'archivio digitale di Ecomuseo vi siano più oggetti fisici simili di un macinacaffé realizzati all'incirca nello stesso periodo: essi saranno quindi contenuti separati. 
+
+```{r echo=FALSE}
+mostra_tabella_modello(x = "Oggetto_fisico")
+```
+
+## Foto o scansione recente di oggetto o risorsa
+
+[[scarica il file di impostazioni per importare questo modello di contenuto direttamente in Omeka S](modelli_di_risorse/Foto_o_scansione_recente_di_oggetto_o_risorsa.json)]
+
+Questo modello viene tipicamente utilizzato per i media che accompagnano oggetti fisici, documenti, od altri contenuti primari. In questo caso i metadata inclusi dovranno essere minimali, e concentrarsi sull'immagine stessa, non sull'oggetto o sul contenuto ivi rappresentato. La descrizione potrà, se necessario, includere dettagli sul contesto in cui è stata scattata la fotografia, ma non dovrà includere dettagli sul contenuto della stessa.
+
+```{r echo=FALSE}
+mostra_tabella_modello(x = "Foto_o_scansione_recente_di_oggetto_o_risorsa")
+
+```
+
+
+
+## Foto storica
+
+[[scarica il file di impostazioni per importare questo modello di contenuto direttamente in Omeka S](modelli_di_risorse/Foto_storica.json)]
+
+Una foto storica si riferisce a una fotografia di cui nell'archivio di Ecomuseo è presente solo una copia digitale. L'autore è quindi il fotografo che originariamente ha scattato la foto (spesso ignoto), mentre la collocazione si riferisce alla persona o ente che attualmente custodisce l'originale, se noto. 
+
+```{r echo=FALSE}
+mostra_tabella_modello(x = "Foto_storica")
+```
+
+## Documento storico
+
+Considerata l'estrema varietà dei contenuti che vi possono afferire, la tipologia "documento storico" è probabilmente la più complessa tra quelle presentate da Ecomuseo. Anche in questo caso lo sforzo è quello di trovare un compromesso tra precisione, corrispondenza a standard stabiliti, e realistici mezzi e capacità di un'associazione di volontariato.
+
+Il modello presentato di seguito ha quindi lo scopo di suggerire i contenuti che tipicamente possono essere utilizzati per descrivere un documento storico incluso nell'archivio di Ecomuseo. Se lo ritengono utile, catalogatori con competenze specifiche potranno comunque liberamente aggiungere qualsiasi campo previsto dalle ontologie [EAC-CPF](http://culturalis.org/eac-cpf/) e [OAD](http://culturalis.org/oad/).
+
+
+[[scarica il file di impostazioni per importare questo modello di contenuto direttamente in Omeka S](modelli_di_risorse/Documento_storico.json)]
+
+
+```{r echo=FALSE}
+mostra_tabella_modello(x = "Documento_storico")
+```
+
+
+
+## Video e audio
+
+Questi modelli vengono utilizzati per descrivere video o audio ospitati da Ecomuseo o rilevanti per l'attività di Ecomuseo. I metadata possono essere completati, specificando link o collocazione dove il video può effettivamente essere visualizzato, anche se non "ospitato" direttamente dall'Archivio digitale di Ecomuseo.
+
+[[scarica il file di impostazioni per importare questo modello di contenuto direttamente in Omeka S](modelli_di_risorse/Video.json)]
+
+```{r echo=FALSE}
+mostra_tabella_modello(x = "Video")
+```
+
+[[scarica il file di impostazioni per importare questo modello di contenuto direttamente in Omeka S](modelli_di_risorse/Audio.json)]
+
+```{r echo=FALSE}
+mostra_tabella_modello(x = "Audio")
+```
+
+## Risorsa bibliografica
+
+I riferimenti bibliografici sono catalogati in linea con le raccomandazioni dell'[iniziativa per i metadata *Dublin Core*](https://www.dublincore.org/specifications/dublin-core/dc-citation-guidelines/), ed includono una citazione completa secondo lo [standard ISO 690](https://it.wikipedia.org/wiki/ISO_690). 
+
+[[scarica il file di impostazioni per importare questo modello di contenuto direttamente in Omeka S](modelli_di_risorse/Risorsa_bibliografica.json)]
+
+```{r echo=FALSE}
+mostra_tabella_modello(x = "Risorsa_bibliografica")
+```
+
+## Numero di rivista
+
+Questo tipo di contenuto è utilizzato per rendere disponibili in formato pdf gli archivi di riviste realizzate da associazioni o amministrazioni locali.
+
+[[scarica il file di impostazioni per importare questo modello di contenuto direttamente in Omeka S](modelli_di_risorse/Numero_di_rivista.json)]
+
+```{r echo=FALSE}
+mostra_tabella_modello(x = "Numero_di_rivista")
+```
+
+## Enti e collezioni personali
+
+È poco intuitivo pensare ad enti o collezioni personali od eventi come "contenuti" (per maggiori dettagli su eventi, vedi la sezione \@ref(eventiteoria)). La creazione di contenuti di questo tipo ha lo scopo pratico di rendere facilmente reperibile tutti i contenuti (oggetti, foto, documenti) custoditi da un determinato ente o esposti in una determinata occasione. 
+
+Lo scopo principale di "contenuti" creati con questi modelli di risorsa è quello di utlizzarli per aggiungerli a singoli contenuti nel campo "è parte di", per esprimere che quel contenuto è parte di un determinato archivio o è tra i materiali esposti in una determinata occasione.
+
+Questo approccio crea automaticamente elenchi di contenuti custoditi in un determinato archivio o esposti in una determinata occasione. 
+
+"Collezioni personali" in questo senso sono raccolte custodite da una determinata persona, e quindi non ha niente a che vedere con le "collezioni" interne di Ecomuseo che, come dettagliato nella Sezione \@ref(collezioneteoria), sono invece collezioni tematiche.
+
+
+[[scarica il file di impostazioni per importare il modello di contenuto per enti direttamente in Omeka S](modelli_di_risorse/Foto_recente_di_oggetto_o_risorsa.json)]
+
+```{r echo=FALSE}
+mostra_tabella_modello(x = "Ente_archivio_o_collezione_personale")
+```
+
+## Eventi {#eventiteoria}
+
+Il modello per eventi può essere utilizzato principalmente a due scopi:
+
+- per indicare un evento storico, a cui varie risorse si riferiscono
+- per indicare una mostra o evento culturale recente, durante il quale un determinato contenuto è stato esposto
+
+Questo oggetto "evento" può essere poi aggiunto come contenuto correlato per contenuti di altri classi. Ad esempio, in caso di immagini o documenti storici, questo evento viene aggiunto nel campo "soggetto" quando quelle immagini o quei documenti trattano di un determinato evento. Viene aggiunto al campo "è parte di" quando invece il documento o l'oggetto sono stati esposti in una determinata occasione.
+
+Per eventi storici di grandi dimensioni e per cui sono diposibili un gran numero di contenuti, ad esempio una guerra mondiale, è preferibile creare una collezione, mentre per eventi più locali un "evento" può essere più adeguato.
+
+In caso di eventuale collocazione dubbia o erronea, è possibile anche in seguito aggiungere tutti i contenuti collegati ad un oggetto a una collezione e viceversa. 
+
+
+
+[[scarica il file di impostazioni per importare il modello di contenuto per eventi direttamente in Omeka S](modelli_di_risorse/Evento.json)]
+
+```{r echo=FALSE}
+mostra_tabella_modello(x = "Evento")
+```
+
+## Persone
+
+È utile aggiungere una persona quando l'identità del soggetto è rilevante o appare ripetutamente in vari contenuti dell'archivio di Ecomuseo. Se la persona è presente nell'archivio genealogico di Ecomuseo, si suggerisce di includere identificativo e link diretto per facilitarne la collocazione.
+
+[[scarica il file di impostazioni per importare il modello di contenuto per eventi direttamente in Omeka S](modelli_di_risorse/Persona.json)]
+
+```{r echo=FALSE}
+mostra_tabella_modello(x = "Persona")
+```
+
+
+## Luoghi, edifici, infrastrutture
+
+Questa tipologia è utilizzata per creare contenuti che possano essere richiamati nel campo "soggetto" ("oggetto") di altri contenuti. 
+
+Ad esempio, nell'archivio di Ecomuseo esiste un contenuto "Centrale idroelettrica di Santa Massenza"; tutti i materiali che fanno riferimento alla centrale citeranno quindi questo contenuto come "soggetto". 
+
+Vi sarà quindi un contenuto "soggetto" con una breve descrizione dello stesso e riferimenti diretti a tutti i contenuti presenti nell'archivio che vi fanno riferimento. 
+
+Si può pensare a questo tipo di contenuto come una versione molto più specifica delle collezioni tematiche: se una collezione tematica potrà ad esempio chiamarsi "Castelli", vi sarà invece un contenuto di questo tipo chiamato, ad esempio, "Castello di Toblino". Tutti i contenuti che in vario modo sono relativi al castello andranno aggiunti alla collezione "Castelli", e avranno questo contenuto "Castello di Toblino" come soggetto. 
+
+[[scarica il file di impostazioni per importare il modello di contenuto per eventi direttamente in Omeka S](modelli_di_risorse/Luoghi_edifici_infrastrutture.json)]
+
+```{r echo=FALSE}
+mostra_tabella_modello(x = "Luoghi_edifici_infrastrutture")
+```
+
+
+## Raccolta di collezioni
+
+La raccolta di collezioni è un contenuto utilizzato con parsimonia e creato dai coordinatori dell'Archivio che ha l'unico scopo di organizzare i contenuti per facilitarne l'esplorazioni. 
+
+Ad esempio, si potrà creare una "Raccolta di collezioni" dal nome "Acqua" per includere collezioni come "laghi", "mulini" e "torrenti".
+
+Si tratta quindi di categorie astratte che non necessitano dettagliata descrizione e servono solo per rendere più intuitiva la navigazione del sito. 
+
+Il tipico contributore all'archivio di Ecomuseo non dovrà mai preoccuparsi di questa tipologia. 
+
+[[scarica il file di impostazioni per importare il modello di contenuto per eventi direttamente in Omeka S](modelli_di_risorse/Raccolta_di_collezioni.json)]
+
+```{r echo=FALSE}
+mostra_tabella_modello(x = "Raccolta_di_collezioni")
+```
+

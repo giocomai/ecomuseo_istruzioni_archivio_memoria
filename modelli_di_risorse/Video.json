@@ -1,0 +1,143 @@
+{
+    "o:label": "Video",
+    "o:resource_template_property": [
+        {
+            "o:alternate_label": "Titolo",
+            "o:alternate_comment": "Titolo del video",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "title",
+            "label": "Title"
+        },
+        {
+            "o:alternate_label": "Descrizione",
+            "o:alternate_comment": "Breve descrizione, idealmente che offra anche informazioni per comprendere il contesto  in cui \u00e8 stato realizzato il video o in cui si svolgono gli eventi descritti o mostrati nel video",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "description",
+            "label": "Description"
+        },
+        {
+            "o:alternate_label": "Tipologia di video",
+            "o:alternate_comment": "Selezionare la tipologia di video pi\u00f9 appropriata",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "customvocab:5",
+            "data_type_label": "Tipologia video",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "type",
+            "label": "Type"
+        },
+        {
+            "o:alternate_label": "Creatore",
+            "o:alternate_comment": "Autori principali del video. Includere nel formato: \"Cognome, Nome (qualifica)\". Qualifica, se rilevante, corrisponde ad esempio a regista, o sceneggiatore.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "creator",
+            "label": "Creator"
+        },
+        {
+            "o:alternate_label": "Creato con il contributo di",
+            "o:alternate_comment": "Altre persone o enti che hanno contribuito alla realizzazione del video",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "contributor",
+            "label": "Contributor"
+        },
+        {
+            "o:alternate_label": "Data di creazione",
+            "o:alternate_comment": "Quando \u00e8 stato realizzato il video. Ripetere il campo  per indicare pi\u00f9 date, o date di inizio e fine delle registrazioni.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "numeric:timestamp",
+            "data_type_label": "Timestamp",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "created",
+            "label": "Date Created"
+        },
+        {
+            "o:alternate_label": "Durata",
+            "o:alternate_comment": "Specificare la durata del video",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "numeric:duration",
+            "data_type_label": "Duration",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "extent",
+            "label": "Extent"
+        },
+        {
+            "o:alternate_label": "Lingua",
+            "o:alternate_comment": "Lingua utilizzata. Se pi\u00f9 di una, ripetere il campo.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "language",
+            "label": "Language"
+        },
+        {
+            "o:alternate_label": "Formato",
+            "o:alternate_comment": "Formato o risoluzione originale del video, o massima risoluzione disponibile",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "format",
+            "label": "Format"
+        },
+        {
+            "o:alternate_label": "Soggetto",
+            "o:alternate_comment": "Includere qui altre risorse presenti nel database visibili in questa risorsa",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "subject",
+            "label": "Subject"
+        },
+        {
+            "o:alternate_label": "Collocazione",
+            "o:alternate_comment": "Collocazione o link a cui il video \u00e8 disponibile",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "provenance",
+            "label": "Provenance"
+        }
+    ],
+    "o:resource_class": {
+        "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/dcmitype\/",
+        "vocabulary_label": "Dublin Core Type",
+        "local_name": "MovingImage",
+        "label": "Moving Image"
+    }
+}

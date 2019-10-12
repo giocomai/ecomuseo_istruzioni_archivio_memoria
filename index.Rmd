@@ -1,0 +1,29 @@
+--- 
+title: "Manuale di istruzioni per l'archivio della memoria dell'Ecomuseo della Valle dei Laghi"
+author: "Roxana Todea / Giorgio Comai"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+biblio-style: apalike
+link-citations: yes
+description: "Manuale di istruzioni per l'archivio della memoria dell'Ecomuseo della Valle dei Laghi"
+header-includes:
+- \usepackage{fontspec}
+- \setmainfont{Carlito}
+- \usepackage[bottom]{footmisc}
+- \PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+fontsize: 12pt
+classoption: a4paper
+---
+
+# Introduzione {#intro}
+
+Questo manuale è indirizzato in primo luogo a chi inserisce contenuti nell'[archivio digitale di Ecomuseo della Valle dei Laghi](https://archiviomemoria.ecomuseovalledeilaghi.it/). Non spiega però solo come tecnicamente aggiungere nuovi contenuti sulla piattaforma scelta da Ecomuseo per gestire l'archivio (*[Omeka S](https://omeka.org/)*), ma anche i criteri che hanno guidato le numerose scelte che caratterizzano ogni passo della creazione di un nuovo archivio, nonché le soluzioni tecniche individuate. La lettura selettiva di alcuni capitoli di questo manuale può essere quindi utile anche per altre associazioni od organizzazioni che intendono mettere in pratica un percorso simile.
+
+Le riflessioni proposte sono state sviluppate nel contesto di un'iniziativa di volontariato e quindi potrebbero non essere adeguate a contesti più istituzionali o commerciali.
+
+Suggerimenti, commenti e critiche sono benvenuti. 
+
+Questo manuale è distribuito con una licenza Creative Commons ([CC-BY](https://creativecommons.org/licenses/by/4.0/deed.it)) [online](https://istruzioniarchiviomemoria.ecomuseovalledeilaghi.it) in un formato facilmente consultabile sia da computer fisso che da dispositivo mobile, in un [pdf scaricabile](https://istruzioniarchiviomemoria.ecomuseovalledeilaghi.it/ecomuseo_istruzioni_utente.pdf) e stampabile, e in formato [epub](https://istruzioniarchiviomemoria.ecomuseovalledeilaghi.it/ecomuseo_istruzioni_utente.epub) per chi utilizza lettori di ebook.
+
+Questo manuale è stato realizzato con [`bookdown`](https://bookdown.org/). Il codice per aggiornarlo o modificarlo e generare una nuova versione in vari formati è [disponibile online](https://git.giorgiocomai.eu/giocomai/ecomuseo_istruzioni_archivio_memoria); da questo stesso indirizzo, per chi ha familiarita con `git` è possibile suggerire direttamente concrete modifiche a questo testo. 

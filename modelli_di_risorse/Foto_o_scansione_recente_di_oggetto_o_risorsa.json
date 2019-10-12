@@ -1,0 +1,71 @@
+{
+    "o:label": "Foto o scansione recente di oggetto o risorsa",
+    "o:resource_template_property": [
+        {
+            "o:alternate_label": "Titolo",
+            "o:alternate_comment": "Titolo della fotografia. Tipicamente, titolo dell'oggetto rappresentato, eventualmente integrato da maggiori dettagli tra parentesi. Ad esempio: (dettaglio del manico), o (dall'alto), o (pagina 2)",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "title",
+            "label": "Title"
+        },
+        {
+            "o:alternate_label": "Descrizione",
+            "o:alternate_comment": "Se rilevante, includere informazioni riguardo al contesto in cui \u00e8 stata fatta la fotografia.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "description",
+            "label": "Description"
+        },
+        {
+            "o:alternate_label": "Autore della fotografia o della scansione",
+            "o:alternate_comment": "Chi ha scattato la foto o chi ha effettuato la scansione",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "creator",
+            "label": "Creator"
+        },
+        {
+            "o:alternate_label": "Data di creazione",
+            "o:alternate_comment": "Data in cui \u00e8 stata scattata la fotografia",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "numeric:timestamp",
+            "data_type_label": "Timestamp",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "created",
+            "label": "Date Created"
+        },
+        {
+            "o:alternate_label": "Licenza d'uso",
+            "o:alternate_comment": "Scegliere dal menu. Tipicamente, CC-BY per immagini o contenuti creati da o per Ecomuseo. Se la licenza non \u00e8 inclusa nell'elenco, contattare l'amministratore del sito per valutare l'inserimento di nuove alternative.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "customvocab:2",
+            "data_type_label": "Licenza",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "license",
+            "label": "License"
+        }
+    ],
+    "o:resource_class": {
+        "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/dcmitype\/",
+        "vocabulary_label": "Dublin Core Type",
+        "local_name": "Image",
+        "label": "Image"
+    }
+}

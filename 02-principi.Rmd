@@ -1,0 +1,64 @@
+# Principi e riflessioni preliminari
+
+L'archivio di Ecomuseo è frutto di un'esperienza di comunità che ha come principale scopo la condivisione e diffusione di conoscenza. I contenuti raccolti da Ecomuseo devono essere non solo facilmente reperibili, ma anche esplorabili in modo intuitivo da utenti diversi.
+
+La logica di massima apertura e condivisione non si applica solo ai contenuti dell'Archivio, ma anche alle modalità di implementazione dell'archivio:
+
+- i contenuti realizzati da Ecomuseo sono distribuiti con una licenza Creative Commons permissiva ([CC-BY](https://creativecommons.org/licenses/by/4.0/deed.it))
+- la piattaforma utilizzata da Ecomuseo per gestire l'archivio è open source e liberamente utilizzabile
+- informazioni aggiuntive utili per replicare o adattare l'esperienza di Ecomuseo sono pubblicamente condivise attraverso questo manuale (un separato manuale con dettagli tecnici e note pratiche sull'installazione e gestione della piattaforma è distribuito separatamente) - anche questo manuale è distributo con licenza [CC-BY](https://creativecommons.org/licenses/by/4.0/deed.it)
+
+
+In questo spirito, le seguenti sezioni presentano alcune riflessioni preliminari che hanno contribuito a determinare scelte tecniche alla base dell'archivio di Ecomuseo nella sua attuale forma.
+
+## Riflessioni preliminari
+
+> Quando l'unico strumento che si ha è un martello, si tende a guardare a tutto come se fosse un chiodo.
+> --- Abraham Maslow, *The Psychology of Science: A Reconnaissance*, 1966.
+
+La scelta di uno strumento contribuisce a definire in modo spesso determinante i flussi di lavoro e i risultati stessi del processo. I sistemi di gestione contenuti per il web contemporanei (noti come CMS, dall'inglese, *content management system*) sono spesso flessibili e possono essere adattatti agli usi più diversi, ma ognuno di loro è stato concepito e sviluppato tenendo come riferimento alcuni specifici casi d'uso. Buona parte dei CMS più diffusi hanno come unità di riferimento centrali i "post" (per i nuovi contenuti che vengono pubblicati, secondo logica da blog o media) e le "pagine" (pagine statiche, come "chi siamo" e "contatti").
+
+Una simile struttura può essere adattata ad altri scopi, ed è possibile introdurre moduli aggiuntivi per queste piattaforme in modo che, a prima vista soddisfino, i requisiti di un archivio digitale. Ciononostante, si tratterà di un continuo "remare controcorrente", con la piattaforma che implicitamente ci spingerà a dare una forma ai contenuti che non è quella che autonomamente andremmo a cercare. Moduli aggiuntivi creati appositamente per adattare il CMS potrebbero non essere compatibili con successivi aggiornamenti, o creare problemi d'altro tipo.
+
+Nel contesto di una realtà giovane e relativamente piccola come quella dell'Ecomuseo della Valle dei Laghi, è quindi particolarmente importante individuare una piattaforma che spinga ad applicare buone pratiche di archiviazione e di presentazione dei contenuti in questo contesto.^[È in principio possibile ottenere un risultato simile anche introducendo moduli aggiuntivi per CMS open source stabili e diffusi quali ad esempio Drupal, anche se questo porterebbe probabilmente ad un consistente lavoro di personalizzazione della piattaforma. Se i moduli e le personalizzazioni aggiuntive non sono a loro volta rese pubbliche con licenza aperte e utilizzate da un numero consistente di utenti, è più probabile che questa scelta porti a complicazioni aggiuntive con il passare degli anni.]
+
+## Preservazione dell'archivio nel lungo periodo
+
+Una parte centrale della missione di ogni archivio è quello di preservare contenuti nel tempo. Nel contesto di internet, questa è di per sé una sfida importante (molti siti diventano disfunzionali nell'arco di pochi anni). Nel contesto dell'Ecomuseo della Valle dei Laghi il problema si pone ancor di più: se si può dare per certo che realtà museali o archivistiche consolidate continuino ad esistere per decenni, nel caso dell'*Ecomuseo* è giusto considerare fin da subito l'eventualità che nel lungo periodo l'iniziativa cambi forma o si unisca ad altre realtà. Pensando al lungo periodo, bisogna contemplare anche la possibilità che la gestione della stessa non sia strutturalmente vincolata ad un determinato fornitore di servizi.
+
+È quindi importante strutturare l'archivio in modo tale che, per quanto possibile, possa essere trasferito su altra piattaforma, ceduto ad altro ente, o adattato in caso di bisogno, senza che questo comporti la perdita del lavoro archivistico svolto nel frattempo. 
+
+## Interoperabilità e standard archivistici {#interoperabilitastandard}
+
+Anche per questo, nell'impostare un lavoro di archiviazione è sempre importante fare riferimento a buone pratiche e standard nazionali e internazionali di archiviazione. Nel contesto dell'archiviazione digitale di risorse archivistiche è stato sviluppato a livello internazionale uno standard di catalogazione comune noto come *Dublin Core*. Lo standard è stato recepito anche in Italia, e proprio sul *Dublin Core* si basano le "[Linee guida per la digitalizzazione e metadati](https://www.iccu.sbn.it/it/normative-standard/linee-guida-per-la-digitalizzazione-e-metadati/)" disponibili sul sito dell'"Istituto Centrale per il Catalogo Unico" (Ministero per i beni e le attività culturali). 
+
+Lo standard è quindi lo stesso utilizzato per le collezioni online della "[Biblioteca digitale italiana](https://www.internetculturale.it/)" gestita da un ente afferente direttamente al Ministero.
+
+Le linee guida sono molto tecniche, ma in sostanza prevedono che per ogni oggetto digitalizzato vi siano delle etichette comuni (titolo, data, creatore, ecc.) che possano essere lette e interpretate correttamente e in modo uniforme sia da persone che da computer.
+
+## Usufruibilità e facilità d'uso
+
+Infine, prodotti e materiali informativi sull'archiviazione digitale sono spesso stati sviluppati avendo come pubblico di riferimento archiviatori di professione, mentre nel caso dell'*Ecomuseo* sono spesso volontari per cui l'archivistica non è la principale professione a dover operare sulla piattaforma. 
+
+## Omeka S {#omekasintro}
+
+Sulla base di queste considerazioni, è stato individuato in *Omeka S* il sistema di gestione contenuti più adeguato alle necessità dell'archivio dell'Ecomuseo delle Valle dei Laghi. 
+
+https://omeka.org/s/
+
+- Omeka è un CMS ideato e sviluppato appositamente per ospitare archivi e collezioni digitali
+- Omeka è software libero ed open source; è sviluppato e mantenuto da un noto centro americano che si occupa di storia e nuovi media - Roy Rosenzweig Center for History and New Media - con il sostegno di grosse fondazioni e università - https://omeka.org/about/project/
+- Omeka esiste dal 2008, è utilizzato da migliaia tra centri, musei, e università, e considerate le solide basi, sembra probabile che continui ad essere sviluppato per il prevedibile futuro. In ogni caso, l'utilizzo di standard consolidati faciliterebbe la transizione ad altre piattaforme, se se ne presentasse la necessità.
+- Omeka può essere gestito da altri consulenti in futuro, non obbligando in alcun modo *Ecomuseo* a mantenere una relazione contrattuale con un determinato fornitore di servizi
+- Omeka spinge ad archiviare tutti gli oggetti includendo informazioni secondo standard archivistici riconosciuti a partire dal summenzionato *Dublin Core*
+- Omeka spinge ad organizzare i contenuti in collezioni e a presentarli in raccolte che tipicamente prendono la forma di mini-siti che corrispondono in sostanza alla versione digitale di libri o mostre
+- esistono una serie di moduli aggiuntivi per Omeka che sfruttano l'archiviazione strutturata dei metadata: è semplice ad esempio selezionare foto dall'archivio per presentarle in linee temporali interattive o in mappe interattive
+- è possibile includere un singolo oggetto (foto o altro) in più "mostre", "libri", o collezioni digitali, facendo riferimento ai dati inseriti originariamente
+- Omeka permette di dare livello diverso di accesso ad utenti che possono essere invitati a collaborare solo su determinate attività
+- Omeka rende pubblici in formato "macchina" i metadata delle collezioni così create: è quindi semplice per altro ente che usa gli stessi standard importare i contenuti raccolti da *Ecomuseo* (o, viceversa, è possibile per *Ecomuseo* importare collezioni che usano correttamente gli standard *Dublin Core*). Questo consente il trasferimento di dati in ogni circostanza, ma anche - ad esempio - permette a motori di ricerca archivistici esterni di presentare i contenuti raccolti da *Ecomuseo*, aumentandone la reperibilità
+- Omeka è integrabile con altri software utilizzati da ricercatori e storici: incentiva quindi i volontari o storici che collaborano con *Ecomuseo* ad utilizzare soluzioni software moderne per gestire bibliografie ([Zotero](https://www.zotero.org/)) o collezioni di foto o documenti, inclusi ad esempio copie fotografiche di materiali raccolti in archivio ([Tropy](https://tropy.org/)). Utilizzare soluzioni dedicate e pensate per storici e ricercatori spinge ad essere più ordinati e più efficienti nel raccogliere e ritrovare materiali, soprattutto quando dopo anni di attività il volume di materiali raccolti diventa più voluminoso
+- Omeka è disponibile in italiano (alcuni moduli aggiuntivi sono per ora disponibili solo in inglese, ma è possibile tradurli). 
+
+Pensato e sviluppato per archivi e musei, Omeka spinge quindi strutturalmente ad adottare buone pratiche, a differenza di soluzioni alternative ideate per altri casi d'uso.
+
+

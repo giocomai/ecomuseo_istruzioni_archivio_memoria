@@ -1,0 +1,62 @@
+# Gestire un archivio con Omeka S
+
+Per poter contribuire ad un archivio in modo sensato, utile e coerente è importante avere familiarità con concetti base di archivistica, e capire come questi si applicano alla piattaforma che si utilizza per aggiungere materiali e per consultare i materiali aggiunti.
+
+Come dettagliato nella sezione \@ref(omekasintro), *Omeka S* è una piattaforma ideata e sviluppata a questo scopo, e quindi strutturalmente invita l'utente ad applicare buone pratiche e rendere i materiali aggiunti compatibili con standard internazionali. 
+
+In un primo momento, i concetti base utilizzati da *Omeka S* possono non essere ovvi, ma capire la logica che ne sta alla base è fondamentale per inserire in modo coerente contenuti. 
+
+## Contenuti e media
+
+L'elemento centrale di *Omeka S* è chiamato __contenuto__. Che cosa è un contenuto? Un contenuto è qualsiasi oggetto materiale o immateriale incluso in archivio, descritto da una serie di caratteristiche (metadata). Un contenuto può avere allegati dei __media__, ad esempio delle fotografie, che lo illustrano. La differenza tra "contenuto" e media che vi è allegato è determinante per definire quali sono i dati da inserire. 
+
+Se il contenuto che vogliamo inserire in archivio è un oggetto storico, ad esempio, i campi descrittivi da associare all'oggetto saranno ben diversi da quelli da associare alla foto che lo accompagna. "Data di creazione" per l'oggetto sarà approssimativamente l'anno in cui quell'oggetto è stato creato, mentre per la foto sarà la data in cui quella foto è stata scattata. Il creatore/autore sarà ovviamente diverso (e spesso ignoto per l'oggetto). Se ha senso includere una licenza che prevede il libero riutilizzo di una fotografia, quella stessa licenza non si può realisticamente applicare ad un oggetto fisico.
+
+
+## Le collezioni {#collezioneteoria}
+
+Le collezioni sono raccolte di contenuti, tipicamente create su base tematica.
+
+Tipicamente, una collezione non ripete informazioni già disponibili in modo sistematico nell'archivio. Ad esempio, tipicamente non vi è alcuna necessità di creare una collezione per includere tutte le fotografie scattate da una persona, visto che lo stesso risultato può essere ottenuto con una semplice ricerca.
+
+Le collezioni possono essere utilizzate per filtrare quali contenuti includere in un sito (vedi punto successivo).
+
+Per maggiori dettagli su come creare nuove "collezioni", vedi in particolare la sezione \@ref(collezionepratica). 
+
+## I siti (o mini-siti)
+
+L'archivio digitale di Ecomuseo avrà un sito principale dal quale sarà possibile esplorare o ricercare tutti i contenuti caricati sulla piattaforma. Un archivio in cui è possibile trovare di tutto è però di difficile navigazione se non vi sono percorsi prestabiliti che invitano ad esplorare i dati. Questo è lo scopo di quelli che *Omeka S* chiama 'siti', anche se probabilmente è meglio pensarli come "mini-siti".
+
+Un sito di questo tipo è il corrispondente digitale di una mostra, di un libro, o di una breve raccolta di articoli. Tipicamente, un sito è composto da una serie di pagine che si possono sfogliare l'una dopo l'altra, e da un'interfaccia che permette di fare ricerche tra un gruppo limitato di contenuti che sono parte di una o più collezioni.
+
+Un archivio di *Omeka S* può quindi raccogliere una serie di raccolte potenzialmente anche scollegate tra loro, permettendo di esplorare i contenuti di ognuna di esse separatamente. Vedi ad esempio questa serie di mostre virtuali realizzate dall'Università dello Utah negli Stati Uniti:
+https://exhibits.lib.utah.edu/s/home/page/home
+
+## Lingua
+
+La lingua principale utilizzata dall'archvio di Ecomuseo è l'italiano. Per questo, non vi è tipicamente bisogno di esplicitare il fatto che un determinato campo (ad esempio, titolo o descrizione di un contenuto) è in italiano. In alcuni casi può comunque sembrare utile includere alcuni campi in lingue diverse dall'italiano, ad esempio per includere anche il nome o i nomi dialettali utilizzati per descrivere un oggetto fisico. 
+
+Inoltre, è possibile immaginare che alcuni documenti abbiano titolo o breve descrizione dei contenuti tratta direttamente dal testo originale in una lingua diversa dall'italiano. Infine, è plausibile, anche se in questa fase non prioritiario, che i metadata di un numero limitato di contenuti sia offerto anche in inglese o altre lingue, ad esempio per realizzare un mini-sito dedicato a persone che sono emigrate dalla nostra valle. 
+
+Per dettagli su come praticamente inserire nella piattaforma informazioni in più lingue, vedi la sezione \@ref(linguapratica).
+
+## Vocabolari e *Dublin Core*
+
+Comprendere il concetto di vocabolario in *Omeka S* non è indispensabile per il corretto utilizzo della piattaforma. Sapere in cosa consiste può comunque essere utili per capire alcune scelte nella struttura dell'archivio.^[Per avere maggiori informazioni riguardo al funzionamento dei vocabolari in *Omeka S* e a come importarne di [nuovi](https://lov.linkeddata.es/dataset/lov/vocabs/), consulta il manuale ufficiale di [Omeka S](https://lov.linkeddata.es/dataset/lov/vocabs/).]  Ciò che Omeka S chiama "vocabolario" corrisponde in sostanza con il concetto di *ontologia*, diffuso in pubblicazioni archivistiche.^[Per chiarimenti sul significato di ontologia in questo contesto, vedi ad esempio [questa pagina della Direzione Generale Archivi](http://www.archivi.beniculturali.it/ontologie/ontologie.html) del MIBAC.]
+
+
+In breve, un "vocabolario" in *Omeka S* corrisponde a una struttura predefinita per inserire informazioni in un archivio. Nello specifico, i campi utilizzati da Ecomuseo per i metadata sono pienamente compatibili con lo standard internazionale noto come "[Dublin Core](http://purl.org/dc/terms/)".^[Come anticipato nella Sezione \@ref(interoperabilitastandard), questo standard è incoraggiato anche nelle "[Linee guida per la digitalizzazione e metadati](https://www.iccu.sbn.it/it/normative-standard/linee-guida-per-la-digitalizzazione-e-metadati/)" disponibili sul sito dell’"Istituto Centrale per il Catalogo Unico" (Ministero per i beni e le attività culturali).] Ogni campo utilizzato, ad esempio "titolo" o "data di creazione", è associato a un concetto definito da questo standard, `dcterms:title` o `dcterms:created`. Questo approccio permette di rendere interoperabili più archivi, e ne facilita l'esportazione, importazione o unione in un secondo momento, a prescindere dalla piattaforma utilizzata per gestire l'archivio.
+
+*Omeka S* rende pubblicamente disponibili i dati relativi ai contenuti inclusi nell'archivio anche in un formato leggibile direttamente da "macchina". Vedi ad esempio:
+
+https://archiviomemoria.ecomuseovalledeilaghi.it/api/items/64
+
+Il "vocabolario" *Dublin Core* è flessibile e adeguato o adeguabile ad ampi gruppi di contenuti. È possibile immaginare però mostre (mini-siti) dedicate ad esempio alla migrazione, o a una professione, e in quel caso i soggetti principali potrebbero essere persone (per un esempio di tale sito realizzato con *Omeka S*, vedi ad esempio questo sito [https://exhibits.lib.utah.edu/s/century-of-black-mormons/page/welcome](realizzato da un'università americana)). In questo caso, vi è bisogno di un "vocabolario" diverso, che preveda dei campi quali "data di nascita", "data di morte", "professione", ecc., non adeguati per normali contenuti archivistici.
+
+Per alcuni specifici tipi di contenuto come ad esempio i docuementi storici, e per favorire maggiore interoperabilità con standard archivistici quali ISAD e ISAAR, la piattaforma di Ecomuseo attualmente permette di completare metadata anche utilizzando "vocabolari" compatibili con questi standard come quelli creati dall'Istituto per i beni artistici culturali e naturali della Regione Emilia-Romagna e da Regesta.exe: [EAC-CPF](http://culturalis.org/eac-cpf/) e [OAD](http://culturalis.org/oad/).
+
+Nel contesto dell'archivio di Ecomuseo, l'eventuale aggiunta di nuovi "vocabolari" verrà valutata a seconda del progetto e tipo di contenuti che verranno inseriti. Per coerenza interna, si preferisce il linea di massima adattare le flessibili categorie proposte dallo standard *Dublin Core* invece di aggiungere nuovi "vocabolari" sviluppati per uno specifico ambito. Quando possibile, si cerca comunque di prevedere una diretta corrispondenza tra il Dublin Core adattato proposto da Ecomuso e corrispondenti campi in ontologie stabilite in determinati ambiti di applicazione, permettendo così conversione diretta anche in un secondo momento. 
+
+
+
+
