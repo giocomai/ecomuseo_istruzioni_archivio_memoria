@@ -63,7 +63,7 @@
         },
         {
             "o:alternate_label": "Editore",
-            "o:alternate_comment": "Tipicamente presente per i libri, non presente o necessario per riviste.",
+            "o:alternate_comment": "Tipicamente presente per i libri, non presente o necessario per riviste. Scrivere nel formato: \"Citt\u00e0: Editore\"",
             "o:is_required": false,
             "o:is_private": false,
             "data_type_name": null,
@@ -156,6 +156,18 @@
             "vocabulary_label": "Dublin Core",
             "local_name": "provenance",
             "label": "Provenance"
+        },
+        {
+            "o:alternate_label": "Link",
+            "o:alternate_comment": "Link alla risorsa bibliografica se disponibile online",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "uri",
+            "data_type_label": "URI",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/ontology\/bibo\/",
+            "vocabulary_label": "Bibliographic Ontology",
+            "local_name": "uri",
+            "label": "uri"
         },
         {
             "o:alternate_label": "Soggetto",
@@ -252,6 +264,18 @@
             "vocabulary_label": "Bibliographic Ontology",
             "local_name": "translationOf",
             "label": "translation of"
+        },
+        {
+            "o:alternate_label": "Lingua",
+            "o:alternate_comment": "Lingua (se pi\u00f9 di una, ripetere il campo) in cui \u00e8 scritto il testo. Inserire solo se diversa dall'italiano.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "language",
+            "label": "Language"
         }
     ],
     "o:resource_class": {
