@@ -15,7 +15,7 @@
         },
         {
             "o:alternate_label": "Descrizione",
-            "o:alternate_comment": "Breve descrizione del documento",
+            "o:alternate_comment": "Breve descrizione del documento e dei suoi contenuti.",
             "o:is_required": false,
             "o:is_private": false,
             "data_type_name": null,
@@ -36,18 +36,6 @@
             "vocabulary_label": "Dublin Core",
             "local_name": "type",
             "label": "Type"
-        },
-        {
-            "o:alternate_label": "Riassunto",
-            "o:alternate_comment": "Se rilevante, utile e possibile, includere un breve riassunto del documento. Altrimenti, lasciare vuote.",
-            "o:is_required": false,
-            "o:is_private": false,
-            "data_type_name": null,
-            "data_type_label": null,
-            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
-            "vocabulary_label": "Dublin Core",
-            "local_name": "abstract",
-            "label": "Abstract"
         },
         {
             "o:alternate_label": "Copertura territoriale",
@@ -74,8 +62,8 @@
             "label": "Date Created"
         },
         {
-            "o:alternate_label": "Creatore",
-            "o:alternate_comment": "Entit\u00e0 o persona principalmente responsabile della creazione della risorsa.",
+            "o:alternate_label": "Soggetto produttore",
+            "o:alternate_comment": "Soggetto (ente, famiglia o persona) che ha prodotto o acquisito per finalit\u00e0  amministrative, familiari o personali il complesso archivistico oggetto di descrizione.",
             "o:is_required": false,
             "o:is_private": false,
             "data_type_name": null,
@@ -84,18 +72,6 @@
             "vocabulary_label": "Dublin Core",
             "local_name": "creator",
             "label": "Creator"
-        },
-        {
-            "o:alternate_label": "Soggetto produttore",
-            "o:alternate_comment": "Soggetto (ente, famiglia o persona) che ha prodotto o acquisito per finalit\u00e0  amministrative, familiari o personali il complesso archivistico oggetto di descrizione.",
-            "o:is_required": false,
-            "o:is_private": false,
-            "data_type_name": null,
-            "data_type_label": null,
-            "vocabulary_namespace_uri": "http:\/\/culturalis.org\/oad#",
-            "vocabulary_label": "OAD - Ontology for Archival Description",
-            "local_name": "hasNameOfCreator",
-            "label": "Nome del soggetto produttore"
         },
         {
             "o:alternate_label": "Copertura temporale",
@@ -108,18 +84,6 @@
             "vocabulary_label": "Dublin Core",
             "local_name": "temporal",
             "label": "Temporal Coverage"
-        },
-        {
-            "o:alternate_label": "Indice dei contenuti",
-            "o:alternate_comment": "Completare questo campo solo se rilevante",
-            "o:is_required": false,
-            "o:is_private": false,
-            "data_type_name": null,
-            "data_type_label": null,
-            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
-            "vocabulary_label": "Dublin Core",
-            "local_name": "tableOfContents",
-            "label": "Table Of Contents"
         },
         {
             "o:alternate_label": "Identificativo",
@@ -168,18 +132,6 @@
             "vocabulary_label": "Dublin Core",
             "local_name": "isPartOf",
             "label": "Is Part Of"
-        },
-        {
-            "o:alternate_label": "Supporto e consistenza",
-            "o:alternate_comment": "Descrivere la consistenza materiale o logica, e il supporto in cui materialmente si presenta.",
-            "o:is_required": false,
-            "o:is_private": false,
-            "data_type_name": null,
-            "data_type_label": null,
-            "vocabulary_namespace_uri": "http:\/\/culturalis.org\/oad#",
-            "vocabulary_label": "OAD - Ontology for Archival Description",
-            "local_name": "extentAndMedium",
-            "label": "Consistenza e supporto dell'unit\u00e0 di descrizione"
         }
     ],
     "o:resource_class": {

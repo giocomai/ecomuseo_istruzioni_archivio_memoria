@@ -50,8 +50,8 @@
             "label": "Spatial Coverage"
         },
         {
-            "o:alternate_label": "Collocazione",
-            "o:alternate_comment": "Dove o presso chi \u00e8 custodito l'oggetto?",
+            "o:alternate_label": "Provenienza",
+            "o:alternate_comment": "Indicare il proprietario o custode attuale. Ripetere il campo se utile chiarire proprietari precedenti. ",
             "o:is_required": false,
             "o:is_private": false,
             "data_type_name": null,

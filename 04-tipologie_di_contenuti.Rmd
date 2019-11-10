@@ -51,7 +51,7 @@ mostra_tabella_modello(x = "Foto_o_scansione_recente_di_oggetto_o_risorsa")
 
 
 
-## Foto storica
+## Foto o illustrazione storica
 
 [[scarica il file di impostazioni per importare questo modello di contenuto direttamente in Omeka S](modelli_di_risorse/Foto_storica.json)]
 
